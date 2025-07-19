@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class QuizzGUI extends JFrame implements ActionListener {
+public class QuizGUI extends JFrame implements ActionListener {
 
     private String[] questions = {
             "What does JVM stand for?",
@@ -23,7 +23,7 @@ public class QuizzGUI extends JFrame implements ActionListener {
     private JPanel panel;
     private JButton submitButton;
 
-    public QuizzGUI() {
+    public QuizGUI() {
         setTitle("Simple Java Quiz");
         setSize(500, 400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -75,7 +75,7 @@ public class QuizzGUI extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            new QuizzGUI().setVisible(true);
+            new QuizGUI().setVisible(true);
         });
     }
 }
